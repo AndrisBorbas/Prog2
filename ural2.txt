@@ -1,5 +1,7 @@
 putty ba1739@ural2.hszk.bme.hu
 
+~/bin/hftest f1
+
 PATH=$PATH:~szebi/SVN/bin        
 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~szebi/SVN/lib 
 svn co http://svn.iit.bme.hu/proga2/labor_peldak/lab_01  
