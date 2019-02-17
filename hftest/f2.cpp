@@ -22,6 +22,7 @@ int main2() {
 	setbuf(stdout, NULL);
 	printf(myid);
 	printf(mytask);
+
 	double x;
 	while ((cin >> x) || !EOF) {
 		if (x > 45.0)cout << fixed << setprecision(4) << fn45(x) << endl;
