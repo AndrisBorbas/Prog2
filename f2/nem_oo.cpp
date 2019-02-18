@@ -16,7 +16,7 @@
  */
 
 namespace sajat {
-	/**
+/**
  * Saját atoi.
  * Számjegyeket tartalmazó karaktersorozat átalakítása int-re.
  * Helyes számjegysorozat végét white space, vagy sztring vége ('\0') jelzi.
@@ -29,11 +29,15 @@ namespace sajat {
  * @param base - számrendszer alapja (0-10)
  * @return     - base számrendszerben értelmezett szám
  */
-	int atoi(const char *p, int base = 10) {
-		int i = 0;
-		while (isspace(p[i]) == 0 || p[i] != '\n') {
-			if (isxdigit(p[i]));
-		}
-	}
+int atoi(const char *p, int base = 10)
+{
+   int i = 0;
 
+   while (isspace(p[i]) == 0 || p[i] != '\n')
+   {
+      if (isxdigit(p[i]))
+         ;
+      //mewo
+   }
+}
 }
