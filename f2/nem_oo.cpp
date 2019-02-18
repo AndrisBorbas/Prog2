@@ -1,6 +1,5 @@
 ﻿#include <cstring>
 #include <cctype>
-#include <cwctype>
 #include "nem_oo.h"
 #include "max.hpp"
 
@@ -32,8 +31,8 @@ namespace sajat {
  */
 	int atoi(const char *p, int base = 10) {
 		int i = 0;
-		while (iswspace(p[i]) == 0 || p[i] != '\n') {
-
+		while (isspace(p[i]) == 0 || p[i] != '\n') {
+			if (isxdigit(p[i]));
 		}
 	}
 
