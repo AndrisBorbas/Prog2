@@ -18,7 +18,7 @@ double fk45(const double& x) {
 	return (0.419*pow(x, 4.0) - 0.838*pow(x, 3.0) + 53.62*pow(x, 2.0) + 13.0 * x - 45);
 }
 
-int main2() {
+int main() {
 	setbuf(stdout, NULL);
 	printf(myid);
 	printf(mytask);

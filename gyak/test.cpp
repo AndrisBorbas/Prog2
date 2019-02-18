@@ -1,19 +1,34 @@
+#include <cstring>
+#include <cctype>
+#include <cmath>
 #include <iostream>
-#include <string>
 
+int atoi(const char *p, int base = 10)
+{
+   int i   = 0;
+   int j   = 0;
+   int num = 0;
 
-template<typename... Args>
-auto adder(Args... args) {
-  //return (... + args);
-  return (args + ...);
+   while (isspace(p[i]) == 0 || p[i] != '\0')
+   {
+      i++;
+   }
+
+   for (i; i >= 0; i--)
+   {
+      if (isdigit(p[i]) && p[i] < base)
+      {
+         num += p[i] * pow(10, j);
+         j++;
+      }
+   }
+   return num;
 }
 
-int main(){
-  long sum = adder(1, 2, 3, 8, 7);
-  std::cout << sum << std::endl; // 21
-
-  std::string s1 = "x", s2 = "aa", s3 = "bb", s4 = "yy";
-  std::string ssum = adder(s1, s2, s3, s4);
-
-  std::cout << ssum << std::endl; //xaabbyy
+int main()
+{
+   char* p="124";
+   std::cin>>p;
+   //int x=atoi(p, 10);
+   std::cout << p <</* x <<*/ '\n';
 }

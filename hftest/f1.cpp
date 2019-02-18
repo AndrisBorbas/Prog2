@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+/*#define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
 
@@ -10,4 +10,4 @@ int main1() {
 	printf(myid);
 	printf(mytask);
 	return(0);
-}
+}*/

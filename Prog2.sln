@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "string2", "lab2\string2_cpp
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nem_oo", "f2\nem_oo.vcxproj", "{89C04FDE-B8D4-471C-8A88-9C27C209E524}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test\test.vcxproj", "{6F1C9D23-060C-4B41-8E4F-B5C9FB6F09D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -65,6 +67,14 @@ Global
 		{89C04FDE-B8D4-471C-8A88-9C27C209E524}.Release|x64.ActiveCfg = Release|Win32
 		{89C04FDE-B8D4-471C-8A88-9C27C209E524}.Release|x86.ActiveCfg = Release|Win32
 		{89C04FDE-B8D4-471C-8A88-9C27C209E524}.Release|x86.Build.0 = Release|Win32
+		{6F1C9D23-060C-4B41-8E4F-B5C9FB6F09D5}.Debug|x64.ActiveCfg = Debug|x64
+		{6F1C9D23-060C-4B41-8E4F-B5C9FB6F09D5}.Debug|x64.Build.0 = Debug|x64
+		{6F1C9D23-060C-4B41-8E4F-B5C9FB6F09D5}.Debug|x86.ActiveCfg = Debug|Win32
+		{6F1C9D23-060C-4B41-8E4F-B5C9FB6F09D5}.Debug|x86.Build.0 = Debug|Win32
+		{6F1C9D23-060C-4B41-8E4F-B5C9FB6F09D5}.Release|x64.ActiveCfg = Release|x64
+		{6F1C9D23-060C-4B41-8E4F-B5C9FB6F09D5}.Release|x64.Build.0 = Release|x64
+		{6F1C9D23-060C-4B41-8E4F-B5C9FB6F09D5}.Release|x86.ActiveCfg = Release|Win32
+		{6F1C9D23-060C-4B41-8E4F-B5C9FB6F09D5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

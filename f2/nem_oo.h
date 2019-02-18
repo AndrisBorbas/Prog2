@@ -29,65 +29,65 @@ namespace sajat {	/// saját névtér
  * @param base - számrendszer alapja (0-10)
  * @return     - base számrendszerben értelmezett szám
  */
-int atoi(const char *p, int base = 10);
+	int atoi(const char *p, int base = 10);
 
-/**
- * Sajat strcat.
- * Két C stílusú sztring (nullával lezárt karaktersorozat) összefűzése
- * A függvény dinamikusan foglal helyet az eredménynek.
- * @param p1   - pointer az első sztringre
- * @param p2   - pointer az másik sztringre
- * @return     - dinamikusan foglalt terület címe, ahova az eredmény kerül (hívónak kell felszabadítania)
- */
-char *strcat(const char *p1, const char *p2);
+	/**
+	 * Sajat strcat.
+	 * Két C stílusú sztring (nullával lezárt karaktersorozat) összefűzése
+	 * A függvény dinamikusan foglal helyet az eredménynek.
+	 * @param p1   - pointer az első sztringre
+	 * @param p2   - pointer az másik sztringre
+	 * @return     - dinamikusan foglalt terület címe, ahova az eredmény kerül (hívónak kell felszabadítania)
+	 */
+	char *strcat(const char *p1, const char *p2);
 
-/**
- * unique
- * A paraméterként kapott két pointer közötti karaktersorozatból kihagyja az egymás után ismétlődő
- * karaktereket (char). A sorozatot az eredeti helyén hagyja!
- * @param first - pointer az adatok kezdetére
- * @param last  - pointer, ami az utolsó adat után mutat
- * @return      - pointer, ami az új sorozat utolsó adata után mutat (a kihagyással rövidült a sorozat)
- */
-char *unique(char *first, char *last);
+	/**
+	 * unique
+	 * A paraméterként kapott két pointer közötti karaktersorozatból kihagyja az egymás után ismétlődő
+	 * karaktereket (char). A sorozatot az eredeti helyén hagyja!
+	 * @param first - pointer az adatok kezdetére
+	 * @param last  - pointer, ami az utolsó adat után mutat
+	 * @return      - pointer, ami az új sorozat utolsó adata után mutat (a kihagyással rövidült a sorozat)
+	 */
+	char *unique(char *first, char *last);
 
-/**
- * Az alább megvalósított adatstruktúra és a hozzá tartózó függvények
- * A max sablonnal kapcsolatos feladat megvalósításához kellenek.
- *
- * Értse meg a működésüket!
- * A feladat részletes leírását a max.hpp fájlban találja.
- * A kapcsolódó feladatot a max.hhp-ben oldja meg, azaz
- * abban valósítsa meg a várt sablont és annak specializációját!
- */
+	/**
+	 * Az alább megvalósított adatstruktúra és a hozzá tartózó függvények
+	 * A max sablonnal kapcsolatos feladat megvalósításához kellenek.
+	 *
+	 * Értse meg a működésüket!
+	 * A feladat részletes leírását a max.hpp fájlban találja.
+	 * A kapcsolódó feladatot a max.hhp-ben oldja meg, azaz
+	 * abban valósítsa meg a várt sablont és annak specializációját!
+	 */
 
-/**
- * Adatstruktúra komplex szám tárolásához
- */
-struct Komplex {
-    double re;  // valós rész
-    double im;  // képzetes rész
-};
+	 /**
+	  * Adatstruktúra komplex szám tárolásához
+	  */
+	struct Komplex {
+		double re;  // valós rész
+		double im;  // képzetes rész
+	};
 
-/**
- * Komplex szám abszolút értéke
- * @param k - komplex szám
- * @return valós - a komplex szám abszolút értéke
- */
-inline double absKomplex(const Komplex& k) {
-    return sqrt(k.re*k.re + k.im*k.im);
-}
+	/**
+	 * Komplex szám abszolút értéke
+	 * @param k - komplex szám
+	 * @return valós - a komplex szám abszolút értéke
+	 */
+	inline double absKomplex(const Komplex& k) {
+		return sqrt(k.re*k.re + k.im*k.im);
+	}
 
-/**
- * Komplex szám kiírása egy ostream típusú adatfolyamra
- * @param os - ostream típusú objektum
- * @param k - komplex szám
- * @return os
- */
-inline std::ostream& operator<<(std::ostream& os, const Komplex& k) {
-    os << "(" << k.re << "," << k.im << "j)";
-    return os;
-}
+	/**
+	 * Komplex szám kiírása egy ostream típusú adatfolyamra
+	 * @param os - ostream típusú objektum
+	 * @param k - komplex szám
+	 * @return os
+	 */
+	inline std::ostream& operator<<(std::ostream& os, const Komplex& k) {
+		os << "(" << k.re << "," << k.im << "j)";
+		return os;
+	}
 
 
 }/// ----------  névtér vége ---------------

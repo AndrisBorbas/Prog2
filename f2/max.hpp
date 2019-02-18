@@ -22,12 +22,17 @@
 #include "nem_oo.h"
 
 namespace sajat {
-
+	template <typename T>
+	T max(const T& x, const T& y)
+	{
+		return (x > y) ? x : y;
+	}
+	Komplex max(const Komplex& x, const Komplex& y)
+	{
+		return (absKomplex(x) > absKomplex(y)) ? x : y;
+	}
+	/*bool max(bool x, bool y) {
+		return x;
+	}*/
 }
-
-
-
-
-
 #endif // _MAX_HPP
-

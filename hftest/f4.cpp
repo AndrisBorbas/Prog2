@@ -1,4 +1,4 @@
-//	^[^#]_*(0x) ? [0 - 9] * W6. + [A - Z] + .*qqriq(A | a)
+/*//	^[^#]_*(0x) ? [0 - 9] * W6. + [A - Z] + .*qqriq(A | a)
 
 #define _CRT_SECURE_NO_WARNINGS
 
@@ -15,4 +15,4 @@ using namespace std;
 int main4() {
 
 	return 0;
-}
+}*/
