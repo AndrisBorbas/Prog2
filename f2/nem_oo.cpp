@@ -44,7 +44,7 @@ namespace sajat {
 			i++;
 		}
 		i--;
-		for (i; i >= 0; i--) {
+		for (i=i; i >= 0; i--) {
 
 			if (isdigit(p[i])) {
 				n = p[i] - 48;
@@ -70,10 +70,10 @@ namespace sajat {
 	char *strcat(const char *p1, const char *p2) {
 		char *pc = new char[strlen(p1) + strlen(p2) + 1];
 		unsigned int i = 0;
-		for (i; i < strlen(p1); i++) {
+		for (i=i; i < strlen(p1); i++) {
 			pc[i] = p1[i];
 		}
-		for (i; i < (strlen(p2) + strlen(p1)); i++) {
+		for (i=i; i < (strlen(p2) + strlen(p1)); i++) {
 			pc[i] = p2[i - strlen(p1)];
 		}
 		pc[i] = '\0';
@@ -91,19 +91,15 @@ namespace sajat {
 	char *unique(char *first, char *last) {
 		int fnd = 0;
 		int lnd = 1;
-		int j = 0;
 		for (int i = 0; i >= 0; i++) {
 			if (first[fnd] != first[lnd]) {
 				fnd++;
-				//j = 0;
-				//first++;
 			}
 			else {
 				while (first[fnd] == first[lnd]) {
 					lnd++;
 				}
 				first[fnd + 1] = first[lnd];
-				//lnd = fnd + j;
 				fnd++;
 			}
 			if (first + lnd == last)break;
