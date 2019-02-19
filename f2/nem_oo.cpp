@@ -2,7 +2,7 @@
 #include <cctype>
 #include <cmath>
 #include "nem_oo.h"
-#include "max.hpp"
+//#include "max.hpp"
 
 /**
  * \file nem_oo_teszt.cpp
@@ -49,7 +49,7 @@ namespace sajat {
 			if (isdigit(p[i])) {
 				n = p[i] - 48;
 				if (n < base) {
-					num += n * pow(10, j);
+					num += n * pow(base, j);
 					j++;
 					continue;
 				}
@@ -106,8 +106,8 @@ namespace sajat {
 				//lnd = fnd + j;
 				fnd++;
 			}
-			if (first + fnd + 1 == last)break;
+			if (first + lnd == last)break;
 		}
-		return (first + fnd + 1 + 1);
+		return (first + fnd);
 	}
 }

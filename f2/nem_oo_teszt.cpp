@@ -179,11 +179,11 @@ int main() {
  * Ellenőrizzük, hogy valóban készített-e max sablont:
  *  Specializáljuk, ha tudjuk, akkor tényleg sablon.
  */
-/*namespace sajat {
+namespace sajat {
     template<>
     bool max(bool a, bool b) { return 0;} /// Nem használjuk, csak trükk:
     /// Ha itt fordítási hibát kap, akkor nem sablonnal oldotta meg a max függvényt!
-}*/
+}
 
 /**
  * SZORGALMI FELADAT:
