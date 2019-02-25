@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+/*#define _CRT_SECURE_NO_WARNINGS
 
 #include <iostream>
 #include <stdio.h>
@@ -29,4 +29,4 @@ int main() {
 		else cout << fixed << setprecision(4) << fk45(x) << endl;
 	}
 	return(0);
-}
+}*/

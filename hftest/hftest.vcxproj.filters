@@ -24,5 +24,8 @@
     <ClCompile Include="f4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="f6.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
