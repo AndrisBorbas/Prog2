@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppEllenallas", "CppEllenal
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "komplex", "Komplex\komplex.vcxproj", "{28B1FB08-2F8B-4C4E-9E0D-E1F849BE79B2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "resistor", "lab4\resistor.vcxproj", "{2BBC8737-D00B-41B9-98A8-D44DD9053CEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -93,6 +95,12 @@ Global
 		{28B1FB08-2F8B-4C4E-9E0D-E1F849BE79B2}.Release|x64.ActiveCfg = Release|Win32
 		{28B1FB08-2F8B-4C4E-9E0D-E1F849BE79B2}.Release|x86.ActiveCfg = Release|Win32
 		{28B1FB08-2F8B-4C4E-9E0D-E1F849BE79B2}.Release|x86.Build.0 = Release|Win32
+		{2BBC8737-D00B-41B9-98A8-D44DD9053CEE}.Debug|x64.ActiveCfg = Debug|Win32
+		{2BBC8737-D00B-41B9-98A8-D44DD9053CEE}.Debug|x86.ActiveCfg = Debug|Win32
+		{2BBC8737-D00B-41B9-98A8-D44DD9053CEE}.Debug|x86.Build.0 = Debug|Win32
+		{2BBC8737-D00B-41B9-98A8-D44DD9053CEE}.Release|x64.ActiveCfg = Release|Win32
+		{2BBC8737-D00B-41B9-98A8-D44DD9053CEE}.Release|x86.ActiveCfg = Release|Win32
+		{2BBC8737-D00B-41B9-98A8-D44DD9053CEE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
