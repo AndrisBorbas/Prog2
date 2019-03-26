@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppVektor", "CppVektor\CppV
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "string5", "lab5\string5.vcxproj", "{82AFFF26-CC4E-40EA-9A70-39F4765ABFC0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppEmber", "CppEmber\CppEmber.vcxproj", "{B6BCC2EF-D183-45F8-BBD5-63B90361DAF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -117,6 +119,12 @@ Global
 		{82AFFF26-CC4E-40EA-9A70-39F4765ABFC0}.Release|x64.ActiveCfg = Release|Win32
 		{82AFFF26-CC4E-40EA-9A70-39F4765ABFC0}.Release|x86.ActiveCfg = Release|Win32
 		{82AFFF26-CC4E-40EA-9A70-39F4765ABFC0}.Release|x86.Build.0 = Release|Win32
+		{B6BCC2EF-D183-45F8-BBD5-63B90361DAF4}.Debug|x64.ActiveCfg = Debug|Win32
+		{B6BCC2EF-D183-45F8-BBD5-63B90361DAF4}.Debug|x86.ActiveCfg = Debug|Win32
+		{B6BCC2EF-D183-45F8-BBD5-63B90361DAF4}.Debug|x86.Build.0 = Debug|Win32
+		{B6BCC2EF-D183-45F8-BBD5-63B90361DAF4}.Release|x64.ActiveCfg = Release|Win32
+		{B6BCC2EF-D183-45F8-BBD5-63B90361DAF4}.Release|x86.ActiveCfg = Release|Win32
+		{B6BCC2EF-D183-45F8-BBD5-63B90361DAF4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
