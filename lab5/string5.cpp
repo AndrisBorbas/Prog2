@@ -15,8 +15,8 @@
  */
 
 #ifdef _MSC_VER
-// MSC ne adjon figyelmeztető üzenetet a C sztringkezelő függvényeire
-  #define _CRT_SECURE_NO_WARNINGS
+ // MSC ne adjon figyelmeztető üzenetet a C sztringkezelő függvényeire
+#define _CRT_SECURE_NO_WARNINGS
 #endif
 
 #include <iostream>             // Kiíratáshoz
@@ -83,7 +83,7 @@ String& String::operator=(const String& rhs) {
 ///                 String-hez jobbról karaktert ad (addString)
 ///                 String-hez String-et ad (addString)
 
-String String::operator+(const String& rhs) const{
+String String::operator+(const String& rhs) const {
 	String temp;
 	temp.len = len + rhs.len;
 	temp.pData = new char[temp.len + 1];
@@ -92,7 +92,7 @@ String String::operator+(const String& rhs) const{
 	return temp;
 }
 
-String String::operator+(const char rhs) const{
+String String::operator+(const char rhs) const {
 	String temp;
 	temp.len = len + 1;
 	temp.pData = new char[temp.len + 1];
@@ -100,6 +100,21 @@ String String::operator+(const char rhs) const{
 	temp.pData[temp.len - 1] = rhs;
 	temp.pData[temp.len] = '\0';
 	return temp;
+}
+
+char& String::operator[](unsigned int idx) {
+	if (idx >= len) throw "String: indexelesi hiba";
+	return pData[idx];
+}
+
+const char& String::operator[](unsigned int idx) const {
+	if (idx >= len) throw "String: indexelesi hiba";
+	return pData[idx];
+}
+
+std::ostream& operator<<(std::ostream& os, const String& s0) {
+	os << s0.c_str();
+	return os;
 }
 
 /// << operator, ami kiír az ostream-re

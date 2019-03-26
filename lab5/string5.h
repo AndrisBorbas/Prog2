@@ -43,7 +43,7 @@
    * azaz, sorban haladva ahol tart a feladatok megoldásában!
    * Ne hagyjon ki feladatot!
    */
-#define ELKESZULT 7
+#define ELKESZULT 10
 
    /**
 	* \section fel Feladat:
@@ -158,17 +158,26 @@ public:
 
 	String& operator=(const String&);
 
+	String& operator+=(const String& rhs) {
+		*this = *this + rhs;
+		return *this;
+	}
+
 	String operator+(const char) const;
 
 	String operator+(const String&) const;
+
+	char& operator[](unsigned int idx);
+
+	const char& operator[](unsigned int idx) const;
+
 }; /// Itt az osztály deklarációjának vége
 
 /// Ide kerülnek a globális operátorok deklarációi.
 /// ...
 
+std::ostream& operator<<(std::ostream& os, const String& s0);
 
-
-
-
+inline String operator+(char ch, const String& str) { return String(ch) + str; }
 
 #endif
