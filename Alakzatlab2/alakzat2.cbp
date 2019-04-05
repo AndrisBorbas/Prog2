@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="alakzat2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/alakzat" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DMEMTRACE" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/alakzat" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-pedantic" />
+			<Add option="-Wall" />
+			<Add option="-DMEMTRACE" />
+		</Compiler>
+		<Unit filename="alakzat.cpp" />
+		<Unit filename="alakzat.h" />
+		<Unit filename="alakzat2_main.cpp" />
+		<Unit filename="haromszog.cpp" />
+		<Unit filename="haromszog.h" />
+		<Unit filename="kor.cpp" />
+		<Unit filename="kor.h" />
+		<Unit filename="memtrace.cpp" />
+		<Unit filename="memtrace.h" />
+		<Unit filename="poligon.cpp" />
+		<Unit filename="poligon.h" />
+		<Unit filename="pont.cpp" />
+		<Unit filename="pont.h" />
+		<Unit filename="rajztabla.cpp" />
+		<Unit filename="rajztabla.h" />
+		<Unit filename="szakasz.cpp" />
+		<Unit filename="szakasz.h" />
+		<Unit filename="szin.cpp" />
+		<Unit filename="szin.h" />
+		<Unit filename="teglalap.cpp" />
+		<Unit filename="teglalap.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
