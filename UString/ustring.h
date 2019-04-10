@@ -10,7 +10,6 @@ public:
 	UString(char ch) :String(ch) {}
 	UString(const String& s1) :String(s1) {}
 
-
 	bool UCase();
 	bool UCase() const;
 	static void UCase(bool isBig);
