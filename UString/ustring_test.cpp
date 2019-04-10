@@ -19,7 +19,7 @@ using std::cin;
 using std::endl;
 
 // Érdemes ELKESZULT 0-val kezdeni!
-#define ELKESZULT 11
+#define ELKESZULT 13
 
 CREATE_Has_(String)         // egy ellenőrző sablont generál (gtest_lite.h-ban)
 
