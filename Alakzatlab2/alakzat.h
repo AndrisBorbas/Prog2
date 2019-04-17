@@ -9,6 +9,7 @@
 #include "memtrace.h"       // így mindenki include-olni fogja, mert az alaposztályt minden fordítási egység
 #include "pont.h"
 #include "szin.h"
+#include <vector>
 
 
  /// Alakzat abszrakt osztály
